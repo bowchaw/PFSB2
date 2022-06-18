@@ -42,7 +42,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JoinOT).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/StreamersOT).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -64,7 +64,7 @@ async def private_receive_handler(c: Client, m: Message):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/JoinOT).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/StreamersOT).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -99,7 +99,7 @@ async def channel_receive_handler(bot, broadcast):
     try:
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
         await log_msg.reply_text(
-            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://t.me/{(await bot.get_me()).username}?start=AbirHasan2005_{str(log_msg.message_id)}",
+            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://t.me/{(await bot.get_me()).username}?start=StreamersHub_{str(log_msg.message_id)}",
             quote=True,
             parse_mode="Markdown"
         )
@@ -108,7 +108,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Get Direct Download Link", url=f"https://t.me/{(await bot.get_me()).username}?start=AbirHasan2005_{str(log_msg.message_id)}")]
+                    [InlineKeyboardButton("Get Direct Download Link", url=f"https://t.me/{(await bot.get_me()).username}?start=StreamersHub_{str(log_msg.message_id)}")]
                 ]
             )
         )
