@@ -74,8 +74,8 @@ async def start(b, m):
             text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('Bots Channel', url='https://t.me/Discovery_Updates'), InlineKeyboardButton('Support Group', url='https://t.me/JoinOT')],
-                    [InlineKeyboardButton('Developer', url='https://t.me/AbirHasan2005')]
+                    [InlineKeyboardButton('Movies Channel', url='https://t.me/StreamersHub'), InlineKeyboardButton('Chat Group', url='https://t.me/StreamersOT')],
+                    [InlineKeyboardButton('Deals Channel', url='https://t.me/TheDealsMaster')]
                 ]
             ),
             disable_web_page_preview=True
