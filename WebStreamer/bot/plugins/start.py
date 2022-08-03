@@ -44,7 +44,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/StreamersOT).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Owner](https://t.me/chandwarish).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -66,7 +66,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/StreamersOT).",
+                    text="Something went Wrong. Contact my [Owner](https://t.me/chandwarish).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -74,8 +74,7 @@ async def start(b, m):
             text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('Movies Channel', url='https://t.me/StreamersHub'), InlineKeyboardButton('Chat Group', url='https://t.me/StreamersOT')],
-                    [InlineKeyboardButton('Deals Channel', url='https://t.me/TheDealsMaster')]
+                    [InlineKeyboardButton('My Owner', url='https://t.me/chandwarish')]
                 ]
             ),
             disable_web_page_preview=True
@@ -87,7 +86,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/StreamersOT).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Owner](https://t.me/chandwarish).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -113,7 +112,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/StreamersOT).",
+                    text="Something went Wrong. Contact my [Owner](https://t.me/chandwarish).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -151,7 +150,7 @@ async def help_handler(bot, message):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/StreamersOT).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Owner](https://t.me/chandwarish).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -173,7 +172,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/StreamersOT).",
+                text="Something went Wrong. Contact my [Owner](https://t.me/chandwarish).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -183,8 +182,7 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Support Group", url="https://t.me/StreamersOT"), InlineKeyboardButton("Deals Channel", url="https://t.me/TheDealsMaster")],
-                [InlineKeyboardButton("Movies Channel", url="https://t.me/StreamersHub")]
+                [InlineKeyboardButton("Owner", url="https://t.me/chandwarish")]
             ]
         )
     )
